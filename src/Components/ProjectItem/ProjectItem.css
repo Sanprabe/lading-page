@@ -1,0 +1,84 @@
+.project-item--container {
+  min-height: 270px;
+  background-color: #393e46;
+
+  display: flex;
+  transition: transform 250ms;
+
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.project-item--container:hover {
+  transform: translateY(-10px);
+}
+
+.project-item--folder-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 35px;
+  width: 40px;
+}
+
+.project-item--folder-icon img {
+  height: 100%;
+  width: 100%;
+}
+
+.project-item--links {
+  position: absolute;
+  top: 25px;
+  right: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.project-item--text {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 75px);
+  width: 87%;
+}
+
+.project-item--text h4 {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  transition: color 250ms;
+}
+
+.project-item--container:hover .project-item--text h4 {
+  color: #00adb5;
+}
+
+.project-item--text p {
+  font-size: 1.7rem;
+  line-height: 1.8rem;
+}
+
+.project-item--technologies {
+  position: absolute;
+  bottom: 20px;
+  width: 260px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-item--technologies p {
+  font-weight: 300;
+  font-size: 1.7rem;
+  transition: color 150ms ease-in;
+}
+
+.project-item--technologies p:hover {
+  color: var(--main-blue);
+}
+
+.project-item--git {
+  color: #00adb5 !important;
+}

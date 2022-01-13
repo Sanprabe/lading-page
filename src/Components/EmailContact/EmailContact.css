@@ -1,0 +1,136 @@
+.contact-content--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.contact-content--container {
+  width: 755px;
+  height: 420px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.contact-info--container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 32px;
+}
+
+.contact-info--item {
+  background-color: #393e46;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+
+  transition: transform 200ms;
+}
+
+.contact-info--item:hover {
+  transform: scale(1.05);
+  background-color: #393e46ea;
+}
+
+.contact-info--icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 16px;
+}
+
+.contact-info--email img {
+  width: 25px;
+  height: 20px;
+}
+
+.contact-info--location img {
+  width: 20px;
+  height: 25px;
+}
+
+.contact-info--text {
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+
+.contact--divider {
+  background-color: #393e46;
+  position: absolute;
+  height: 250px;
+  width: 5px;
+  left: 280px;
+  top: 0;
+}
+
+.contact-emailme--contaner {
+  height: 100%;
+  margin-left: 40px;
+
+  /* position: relative; */
+}
+
+.contact-emailme--contaner label {
+  font-size: 2rem;
+}
+
+.contact-emailme--contaner input[type="text"],
+.emailme-input--message,
+.contact-emailme--contaner input[type="email"] {
+  background-color: #393e46;
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 40px;
+  margin: 10px 0;
+  padding-left: 20px;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 1.7rem;
+}
+
+.contact-emailme--contaner .emailme-input--message {
+  height: 150px;
+  width: 100%;
+  max-width: 465px;
+  padding-top: 10px;
+}
+
+.emailme-input--submit {
+  background-color: transparent;
+  border: 1px solid #00adb5;
+  border-radius: 10px;
+  padding: 10px 20px;
+
+  height: 50px;
+  width: 120px;
+  margin-top: 5px;
+  background-color: transparent;
+  border: 2px solid var(--main-blue);
+  border-radius: 3px;
+  font-size: 1.5rem;
+  color: var(--main-blue);
+  margin-left: auto;
+
+  font-family: "Inconsolata", monospace;
+  font-size: 1.7rem;
+
+  transition: background-color 250ms;
+}
+
+.emailme-input--submit:hover {
+  background-color: #00adb5;
+  color: white;
+}
